@@ -1,26 +1,55 @@
-Proyecto de Análisis de Datos de Pacientes de Biopsia de Próstata
+# 🧬 Predicción de Hospitalización en Pacientes con Biopsia de Próstata
+
+Este proyecto se centra en el **análisis de datos de pacientes que se sometieron a biopsias de próstata**, con el objetivo de **predecir la hospitalización** posterior al procedimiento.  
+Se utiliza un enfoque de **Machine Learning** para identificar las características más relevantes asociadas a un mayor riesgo de hospitalización.
 
 
-Este proyecto se centra en el análisis de datos de pacientes que se sometieron a biopsias de próstata, con el objetivo de predecir la hospitalización de los pacientes después del procedimiento. Se utiliza un enfoque de aprendizaje automático para identificar las características de los pacientes que están asociadas con un mayor riesgo de hospitalización.
+## 📂 Estructura del Repositorio
+- **data/** → contiene los datos utilizados en el análisis (`BBDD_Hospitalización.xlsx`).  
+- **notebooks/** → Jupyter Notebooks con el análisis y modelado de datos (`Taller3.ipynb`).  
+- **README.md** → documentación del proyecto.  
 
-Estructura del Repositorio
-Data: Carpeta que contiene los datos utilizados en el análisis.
 
-Notebooks: Carpeta que contiene los Jupyter Notebooks utilizados en el análisis y modelado de datos.
+## 🔎 Contenido del Proyecto
+1. **Exploratory Data Analysis (EDA)**  
+   - Análisis exploratorio de las características de los pacientes.  
+   - Relación de variables clínicas con la hospitalización.  
 
-README.md: Archivo que contiene información detallada sobre el proyecto y su estructura.
+2. **Preprocesamiento de Datos**  
+   - Limpieza de datos.  
+   - Conversión de tipos y normalización.  
+   - Manejo de valores faltantes.  
 
-Contenido del Proyecto:
+3. **Modelado de Datos**  
+   - Entrenamiento de un modelo de clasificación con **RandomForestClassifier**.  
+   - Ajuste de hiperparámetros y validación.  
 
-Exploratory Data Analysis (EDA): Se realiza un análisis exploratorio de los datos para comprender mejor las características de los pacientes y su relación con la hospitalización.
+4. **Evaluación del Modelo**  
+   - Métricas de rendimiento: **precisión, recall, F1-score**.  
+   - Interpretación de resultados.  
 
-Preprocesamiento de Datos: Se lleva a cabo el preprocesamiento de los datos, incluyendo la limpieza de datos, la conversión de tipos de datos y el manejo de valores faltantes.
+5. **Conclusiones y Recomendaciones**  
+   - Hallazgos sobre factores de riesgo.  
+   - Sugerencias para mejorar el modelo y su capacidad predictiva.  
 
-Modelado de Datos: Se entrena un modelo de aprendizaje automático, específicamente un RandomForestClassifier, para predecir la hospitalización de los pacientes.
 
-Evaluación del Modelo: Se evalúa el rendimiento del modelo utilizando métricas de evaluación como precisión, recall y F1-score.
+## ⚙️ Instrucciones de Uso
+1. Clonar el repositorio:  
+   ```bash
+   git clone https://github.com/MiguelGalleg05/biopsia-prostata-analitica-ml.git
+   cd biopsia-prostata-analitica-ml
+   
+### Instalar dependencias necesarias:
+pip install -r requirements.txt
 
-Conclusiones y Recomendaciones: Se presentan las conclusiones del análisis y se sugieren recomendaciones para mejorar el modelo y su capacidad predictiva.
+### Ejecutar el notebook principal:
+jupyter notebook notebooks/Taller3.ipynb
 
-Instrucciones de Uso:
-Para replicar los resultados de este proyecto, se recomienda clonar este repositorio y ejecutar los Jupyter Notebooks en un entorno de Python con las bibliotecas necesarias instaladas.
+### 🛠️ Tecnologías utilizadas
+Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
+Jupyter Notebook
+Excel (fuente de datos)
+
+### 📣 Autor
+Miguel Gallego Álvarez
+✉️ miguelgallego2020@gmail.com
